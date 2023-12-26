@@ -1,0 +1,31 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-unused-vars": "warn", // no unsed variable
+    "no-var": "warn",
+    "no-console": "warn",
+    "camelcase": "warn",
+    "prefer-const": "warn", // if variable is never reassigned, use 'const' instead
+    "no-unsafe-optional-chaining": [
+      "error", // Unsafe usage of optional chaining. If it short-circuits with 'undefined' the evaluation will throw TypeError
+      { "disallowArithmeticOperators": true } //  Unsafe arithmetic operation on optional chaining. It can result in NaN
+    ]
+  }
+}

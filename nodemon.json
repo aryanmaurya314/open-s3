@@ -1,0 +1,6 @@
+{
+  "verbose": true,
+  "watch": "src/**/*",
+  "exec": "ts-node src/server.ts",
+  "ext": "ts,json"
+}
