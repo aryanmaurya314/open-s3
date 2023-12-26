@@ -1,4 +1,4 @@
-import { allowedMimeTypes } from '@/controllers/constants';
+import { allowedMimeTypes } from '@/constants';
 import multer, { memoryStorage } from 'multer';
 
 const upload = multer({
