@@ -1,5 +1,5 @@
 {
-  "name": "node-express-typescript",
+  "name": "open-s3",
   "version": "1.0.0",
   "main": "src/server.ts",
   "scripts": {
@@ -51,7 +51,7 @@
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   },
-  "repository": "https://github.com/aryanmaurya314/node-express-typescript.git",
+  "repository": "https://github.com/aryanmaurya314/open-s3.git",
   "author": "Aryan Maurya <aryanmaurya314@gmail.com>",
   "license": "MIT"
 }

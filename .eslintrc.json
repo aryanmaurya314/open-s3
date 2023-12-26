@@ -3,11 +3,7 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
   "plugins": ["@typescript-eslint", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -19,6 +15,7 @@
     "@typescript-eslint/ban-ts-comment": "warn",
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/no-unused-vars": "warn", // no unsed variable
+    "no-ex-assign": "warn",
     "no-var": "warn",
     "no-console": "warn",
     "camelcase": "warn",
